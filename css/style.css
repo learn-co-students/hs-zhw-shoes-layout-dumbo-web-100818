@@ -17,6 +17,12 @@ img.verif_img {
 
 /********** Global **********/
 
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
 body {
   background: url(../images/handmadepaper.png);
 }
@@ -118,7 +124,7 @@ iframe {
   font: bold 42px 'Elsie Swash Caps', cursive;
   color: white;
   text-shadow: 0 2px 3px #000;
-  margin: 0 0 10px;
+  margin: 0 0 3%;
 }
 
 .border_right {
@@ -132,6 +138,42 @@ iframe {
 
 .contact_form {
   height: 415px;
+}
+
+.clearfix:after {
+content: “.”;
+display: block;
+clear: both;
+visibility: hidden;
+height: 0;
+line-height: 0;
+}
+
+.columns {
+  display: block;
+  float: left;
+  width: 31.333%;
+}
+
+.bigcolumn {
+  display: block;
+  float: left;
+  width: 65.666%;
+}
+
+.indent {
+  margin-left: 3%;
+}
+
+.margindown {
+  margin: 0 0 3%;
+}
+
+.specialcase {
+  margin: 0 0 3% 3%;
+  display: block;
+  float: right;
+  width: 31.333%;
 }
 
 /********** Header **********/
